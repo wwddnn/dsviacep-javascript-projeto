@@ -1,0 +1,140 @@
+
+* {
+    box-sizing: border-box; /* padrao usado para border e margin ficar embutido*/
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif; /* Open sans é fonte baixado do google fonts*/
+}
+
+html, body {
+    background-color: black;
+}
+
+.nav-container {
+    height: 80px;
+    background-color: #ff8400;
+    width: 100%;
+    padding: 0 20px; /* padding é o interno*/
+    display: flex; 
+    align-items: center;
+}
+
+.nav-main {
+    width: 100%;
+    max-width: 900px; /* ate a largura max que vai o nav-main*/
+    margin: 0 auto; /* centraliza a nav-main */
+    display: flex;
+    align-items: center; /* alinha os itens que sao os textos na horizontal */
+    justify-content: space-between;
+}
+
+.nav-main {
+    color: #fff;
+    font-size: 30px;
+}
+
+.contact-link {
+    color: #fff;
+    cursor: pointer;
+}
+
+.form-container {
+    width: 100%;
+    padding: 40px 20px;
+}
+
+.card-form {
+    background-color: #333;
+    width: 100%;
+    max-width: 600px; /* largura max do card*/
+    margin: 0 auto; /* centraliza o card*/
+    border-radius: 8px;
+    padding: 20px; /* esse padding fica ao redor do card grande que engloba todos os cards*/
+}
+
+.form-control {
+    margin-bottom: 20px;
+}
+
+.form-control label {
+    display: none; /* nao aparece o label */
+}
+
+.error-message {
+    margin-top: 5px;
+    color: #faa;
+    font-size: 14px;
+}
+
+.form-input {
+    height: 50px;
+    width: 100%;
+    border-radius: 4px;
+    padding: 0 20px; /* pra garantir o espaco dentro do input que tem nas laterais com o placeholder */
+    font-size: 14px;
+    border: 0; /* repara que nao tem bordar mesmo */
+}
+
+.form-input::placeholder { /* formata o atributo placeholder usamos :: */
+    color: #c9c9c9; /* muda a cor somente do placeholder*/ 
+}
+
+.form-input:disabled {
+    background-color: #ddd; /* por padrao o disabled ele escurece o background, mas aqui vamos deixar um pouco mais claro */
+}
+
+.btn-container { /* estilizando o container que ficam os botoes dentro*/
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    height: 50px;
+    width: 250px;
+    background-color: #ff8400;
+    border: 0;
+    border-radius: 6px;
+    color: #fff;
+    font-weight: bold; /* pode colocar bold ou 700 é a mesma coisa */
+    font-size: 16px;
+}
+
+.btn-left {
+    margin-right: 10px;
+}
+
+.btn-right {
+    margin-left: 10px;
+}
+
+.list-container {
+    width: 100%;
+    padding: 0 20px; /* padding de 0 em cima e embaixo, e de 20px nas laterais */ 
+    display: flex;
+    flex-direction: column; /* serve pra colocar em formato de coluna um embaixo do outro */
+    align-items: center;
+}
+
+.card-list-item {
+    background-color: #333333;
+    margin-bottom: 20px;
+    width: 100%; /* largura normal é 100%*/
+    max-width: 900px; /* largura max é de 900px */
+    border-radius: 8px;
+    padding: 20px 20px; /* padding é o espaco de dentro que tira a letra colada do card */
+}
+
+.card-list-item h3 {
+    color: #ff8400;
+    font-size: 18px;
+}
+
+.address-line {
+    color: #fff;
+    font-size: 14px;
+}
+
+.address-cep {
+    color: #8f8f8f;
+    font-size: 12px;  
+}
