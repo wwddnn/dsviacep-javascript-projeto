@@ -1,4 +1,7 @@
 
+@import 'modal.css'; /* importa do css o arquivo que estiliza o modal */
+@import 'buttons.css'; /* importa do css o arquivo que estiliza os botoes */
+
 * {
     box-sizing: border-box; /* padrao usado para border e margin ficar embutido*/
     margin: 0;
@@ -83,29 +86,6 @@ html, body {
     background-color: #ddd; /* por padrao o disabled ele escurece o background, mas aqui vamos deixar um pouco mais claro */
 }
 
-.btn-container { /* estilizando o container que ficam os botoes dentro*/
-    display: flex;
-    justify-content: space-between;
-}
-
-.btn {
-    height: 50px;
-    width: 250px;
-    background-color: #ff8400;
-    border: 0;
-    border-radius: 6px;
-    color: #fff;
-    font-weight: bold; /* pode colocar bold ou 700 é a mesma coisa */
-    font-size: 16px;
-}
-
-.btn-left {
-    margin-right: 10px;
-}
-
-.btn-right {
-    margin-left: 10px;
-}
 
 .list-container {
     width: 100%;

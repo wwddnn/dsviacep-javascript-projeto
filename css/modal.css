@@ -1,0 +1,38 @@
+
+.modal-container {
+    position: fixed; /* vou fixar esse modal em cima de todos, la no alto com margin e padding zero */
+    top: 0;
+    left: 0;
+
+    padding: 20px;
+
+    background-color: rgba(0, 0, 0, 0.5); /* a faz a tela ficar preta porem esmaecida */
+    height: 100vh;
+    width: 100%;
+    z-index: 1; /* fica na frente do zero se sobrepoe ao que esta na tela*/
+
+    display: none;
+}
+
+.modal-container.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-box {
+    width: 100%;
+    max-width: 480px;
+    background-color: #444;
+    padding: 20px;
+    border-radius: 10px;
+    border: 10px solid #aaa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-content {
+    color: #fff;
+    margin-bottom: 20px;
+}
